@@ -1,0 +1,28 @@
+id: 3b5c560e-a5dc-41ab-90d2-f27ea6976789
+timestamp: 2023-11-19T10:27:52.766Z
+source: TAP-GUI
+username: vrabbi
+accelerator:
+  name: spring-streaming-app
+fragments:
+  - name: build-wrapper-maven
+  - name: live-update
+  - name: tap-workload
+options:
+  lifecycle: experimental
+  bsGitBranch: main
+  repoVisibility: public
+  projectName: spring-streaming-app
+  groupId: com.example
+  packageName: com.example.tanzu.streamtemplate
+  mainClassName: StreamApplication
+  objectModelClassName: Foo
+  applicationRole: source
+  sourceChannel: foo-source
+  resultChannel: foo-result
+  msgBrokerName: stream-sample-message-broker
+  liveUpdateIDESupport: true
+  includeBuildToolWrapper: true
+  bsGitRepository: github.com?owner=vrabbi&repo=streaming-app-demo-01
+  owner: platform-team
+  system: demo-apps

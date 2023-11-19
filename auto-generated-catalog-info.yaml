@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-streaming-app
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=spring-streaming-app
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: vrabbi/streaming-app-demo-01
+    grafana/dashboard-selector: spring-streaming-app
+    janus-idp.io/tekton: spring-streaming-app
+spec:
+  type: service
+  system: demo-apps
+  lifecycle: experimental
+  owner: platform-team
